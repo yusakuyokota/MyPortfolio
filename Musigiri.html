@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property='og:type' content='website'>
-    <meta property='og:title' content='フロントエンドエンジニア志望 YUSKAU YOKOTA ポートフォリオ'>
+    <meta property='og:title' content='ゲームプログラマー（クライアントエンジニア）志望 YUSKAU YOKOTA ポートフォリオ'>
     <meta property='og:url' content='URLが入る'>
     <meta property='og:description' content='YUSAKU YOKOTA のポートフォリオサイトです。'>
     <meta property="og:image" content="img/ogp.png">
@@ -43,29 +43,28 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">モスキートスナイプ</h2>
+          <h2 class="article-title">蟲斬</h2>
           <div class="article-body">
             <p>
-              <img src="img/MosquitoSnipe_GameImage.png" alt="">
+              <img src="img/ObakePuzzle_GameImage.png" alt="">
             </p>
             <p>
-              学校の授業（2024年第三回ハッカソン企画）にて制作した作品になります。
-              画面内を飛び回る蚊をただひたすら打ち落として高スコアを狙うというゲームです。
+              学校の授業（2023年度前期ゲームプロジェクト）にて制作した作品になります。<br>
+              NintendoSwitchのJoy-Conを使用してコントローラを実際に振ったりすることで敵を倒す2Dアクションゲームです。
             </p>
             <p>
               制作ツール：Unity
             </p>
-            <h3>URL</h3>
-            <p><a href="https://github.com/yusakuyokota/MosquitoSnipe" target="_blank" rel="noopener">https://github.com/yusakuyokota/MosquitoSnipe</a></p>
+            <h3>作品URL（GitHub）</h3>
+            <p><a href="https://github.com/EayS01001/Musigiri" target="_blank" rel="noopener">https://github.com/EayS01001/Musigiri</a></p>
             <h3>担当</h3>
-            <p>プログラミング（プログラマーリーダー）</p>
+            <p>プログラミング</p>
             <h3>制作コメント</h3>
             <p>
-              この制作では、プレイヤーのHP・スコア・コンボなどを管理するマネージャークラスの作成と全員の仕事の統合作業を主に行いました。
-              <br>苦労した点は、他のメンバーへの仕事の割り振りです。私はこの制作で初めてプログラマーリーダーとしてチームをまとめるということで、
-              plantUMLを使って軽いクラス図を制作し、最初からやる作業を明確にした上で仕事を割り振るようにしたのですが、この作業に多く時間を使ってしまい、実質的な制作期間を縮めてしまいました。
-              <br>こだわった点は、スコアの計算です。連続で倒したコンボの値や、命中精度などを掛け合わせて計算することで、「丁寧かつ俊敏に」というゲーム性を高めていきました。
-              先生方のフィードバックを受けた改良も行い、エイム練習ゲームとしてうまくまとめられました。
+              この制作では、HPバーの演出とプレイヤーのアクションギミックのプールを制作しました。
+              苦労した点は、プールの制作です。オブジェクトを生成したまま画面外に移動させて必要になったらまた呼び出すのをQueueを使うなど知らないことばかりの機能を先輩のプログラマーに教わりながら実装していきました。
+              こだわった点は、HPバーの演出です。DoTweenを使用してUIアニメーションを行っているのですが、ダメージを受けたときにバーを振動させていると初期位置から若干移動していってしまうのを原因を特定、解決しました。
+              連続で揺らさないと起こらない現象なのでゲーム中には発生しないのですが、不具合を見過ごさず解決できたのが自分でもよかったと思っています。
             </p>
           </div>
           <div class="home-link">
