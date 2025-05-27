@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property='og:type' content='website'>
+    <meta property='og:title' content='ゲームプログラマー（クライアントエンジニア）志望 YUSKAU YOKOTA ポートフォリオ'>
+    <meta property='og:url' content='URLが入る'>
+    <meta property='og:description' content='YUSAKU YOKOTA のポートフォリオサイトです。'>
+    <meta property="og:image" content="img/ogp.png">
+    <meta name="description" content="YUSAKU YOKOTA のポートフォリオサイトです" />
+    <title>YUSAKU YOKOTA PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel=”canonical” href=”URLが入る” />
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href=".">YUSAKU YOKOTA</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href=".#works">WORKS</a></li>
+            <li class="gnav-item"><a href="./#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="./#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="./#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">キューブバスター</h2>
+          <div class="article-body">
+            <p style="text-align: center;">
+              <iframe width="784" height="441" 
+              src="https://www.youtube.com/embed/VTJjL7FQojQ?si=fXKkosaVWac9XvLZ" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </p>
+            <h3>このゲームについて</h3>
+            <p>
+              同じ専門学校の学生でチームを組み、今年の神ゲー創造主レボリューションに応募するために現在制作中の作品になります。
+              フィールドについているバフをプレイヤーに貼り付けて、自分を強化して戦う3Dパズルアクションゲームです。
+            </p>
+            <h3>作品URL（GitHub）</h3>
+            <p><a href="https://github.com/yusakuyokota/CubeBuster" target="_blank" rel="noopener">https://github.com/yusakuyokota/CubeBuster</a></p>
+            <h3>担当</h3>
+            <p>
+              敵の基本クラスの実装<br>
+              フィールドのマスの実装<br>
+              戦闘終了後のプレイヤー強化イベントの実装、マスターデータの設計<br>
+            </p>
+            <h3>制作コメント</h3>
+            <p>
+              1つのフィールドに複数体の敵を出現させる上で敵同士が同じマスに重なってしまう問題に悩まされました。
+              この解決に、敵の移動経路の導出にA*アルゴリズムを用いて、敵が乗っているマスを調査しないようにすることでこの問題を解決しました。<br>
+              ゲームを連続で遊べるようにするため、次のステージに進むときにマスを1度削除してまた生成する処理をしており、動作が重くなってしまうのではないかと考えました。
+              そこで、UniTaskを使用してフィールドのマスを生成、削除を1つずつ行うことでゲームの動作を軽量化することに成功しました。
+            </p>
+          </div>
+          <div class="home-link">
+            <a href="./#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;TARO YAMADA</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
