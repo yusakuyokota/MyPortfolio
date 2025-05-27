@@ -18,7 +18,11 @@ img {
   border-style: none;
 }
 
-
+iframe
+{
+  max-width: 100%;
+  border-style: none;
+}
 
 .pc-only {
   display: block;
@@ -180,9 +184,21 @@ img {
   margin-bottom: -40px;
 }
 
+.works-emphasis {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.works-emphasis:hover{
+  opacity: .9;
+}
+
 .works-item {
   width: 31.74603%;
-  margin-right: 1.58730%;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 40px;
   color: #333;
 }
